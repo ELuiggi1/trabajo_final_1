@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    <%- include('../partials/meta') %>
+    </head>
+    <body>
+    <%- include('../partials/header2') %>
+    <h1>Lista de las criptomonedas más importantes</h1>
+    <main>
+
+        <% users.forEach (user => { %>
+            <h3><%= user.name %></h3>
+            <% }) %>
+
+    </main>
+    <%- include('../partials/footer') %>
+    </body>
+</html>
