@@ -2,6 +2,7 @@ const express = require('express')
 const path = require('path')
 const app = express()
 const users = require('./utils/users')
+const port = process.env.PORT || 3000
 const titu = 'inxicode'
 
 app.set('views', path.join(__dirname, 'views'))
@@ -44,6 +45,6 @@ app.get('/products', (req, res) => {
 })
 
 
-app.listen (3000,()=>{
+app.listen (port,()=>{
     console.log('este es el puerto 3000')
 })
